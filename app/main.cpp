@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     OpenWeatherModule::registerQmlTypes(engine, "edu.openweather");
+    OpenWeather::setApiKey("");
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;

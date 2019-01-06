@@ -1,15 +1,16 @@
 QT *= network quick
 
+message($$OWE_SOURCE_DIR)
 SOURCES += \
-    openweather/weatherapi.cpp \
-    openweather/citymodel.cpp \
-    openweather/openweatherforecast.cpp \
-    openweather/openweatherconditions.cpp \
-    openweather/openweathercache.cpp
+    $$OWE_SOURCE_DIR/openweather/weatherapi.cpp \
+    $$OWE_SOURCE_DIR/openweather/citymodel.cpp \
+    $$OWE_SOURCE_DIR/openweather/openweatherforecast.cpp \
+    $$OWE_SOURCE_DIR/openweather/openweatherconditions.cpp \
+    $$OWE_SOURCE_DIR/openweather/openweathercache.cpp
 
 HEADERS += \
-    openweather/weatherapi.h \
-    openweather/citymodel_p.h \
-    openweather/openweatherforecast_p.h \
-    openweather/openweatherconditions_p.h \
-    openweather/openweathercache_p_p.h
+    $$OWE_SOURCE_DIR/openweather/weatherapi.h \
+    $$OWE_SOURCE_DIR/openweather/citymodel_p.h \
+    $$OWE_SOURCE_DIR/openweather/openweatherforecast_p.h \
+    $$OWE_SOURCE_DIR/openweather/openweatherconditions_p.h \
+    $$OWE_SOURCE_DIR/openweather/openweathercache_p_p.h
